@@ -1,4 +1,4 @@
-# haskell-workspace-preview
+# xmonad-workspace-preview
 
 show open workspaces as thumbnails in xmonad
 

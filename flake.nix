@@ -20,8 +20,8 @@
         rec {
           defaultPackage = packages.package_name;
           packages.package_name = pkgs.stdenv.mkDerivation {
-            name = "haskell-workspace-preview";
-            pname = "haskell-workspace-preview";
+            name = "xmonad-workspace-preview";
+            pname = "xmonad-workspace-preview";
             version = "1.0";
             src = ./src;
           
@@ -33,8 +33,8 @@
               mkdir -p $out/bin
               mkdir -p $out/tmp
               cp -r $src/* $out/tmp
-              ghc -o $out/bin/haskell-workspace-preview $out/tmp/Main.hs
-              chmod +x $out/bin/haskell-workspace-preview
+              ghc -o $out/bin/xmonad-workspace-preview $out/tmp/Main.hs
+              chmod +x $out/bin/xmonad-workspace-preview
               rm -rf $out/tmp
             '';
             dontInstall = true;
